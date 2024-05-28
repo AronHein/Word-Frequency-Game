@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Frequency Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <p class="word-prefix">the word</p>
+        <p class="word"></p>
+        <p>is used on average</p>
+        <p class="value"></p>
+        <p>times per million words</p>
+        <p class="definition"></p>
+      </div>
+      <div class="right-side">
+        <p class="word-prefix">the word</p>
+        <p class="word"></p>
+        <p>is used on average</p>
+        <p class="value"></p>
+        <button class="guess-button" id="higher">More</button>
+        <button class="guess-button" id="lower">Less</button>
+        <p id="right-times-per">times per million words</p>
+        <p class="definition"></p>
+      </div>
+      <div class="off-screen">
+        <p class="word-prefix">the word</p>
+        <p class="word"></p>
+        <p>is used on average</p>
+        <p class="value"></p>
+        <p class="definition"></p>
+      </div>
+      <div class="vs-indicator">VS</div>
+    </div>
+    <div class="info">
+      <p id="definitions-info">
+        Definitions from:
+        <a href="https://dictionaryapi.dev/">https://dictionaryapi.dev/</a>
+      </p>
+      <p id="images-info">
+        Images from:
+        <a href="https://www.pexels.com">https://www.pexels.com</a>
+      </p>
+      <p id="frequency-info">
+        Word frequency data from:
+        <a href="https://www.kaggle.com/datasets/rtatman/english-word-frequency">https://www.kaggle.com/datasets/rtatman/english-word-frequency</a>
+      </p>
+      <p id="gif-info">
+        Gifs from:
+        <a href="https://tenor.com/">https://tenor.com/</a>
+      </p>
+    </div>
+    <p id="score">Score: 0</p>
+    <div class="game-over">
+      <h1>Game Over!</h1>
+      <p>Your final score is:</p>
+      <p class="value"></p>
+      <button id="play-again-button">Play Again</button>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
